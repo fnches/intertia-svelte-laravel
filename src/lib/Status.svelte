@@ -12,13 +12,13 @@
 
 	async function trackRounds() {
 		if (!running) return
-		await getStatus()
 		const status = await $algod.statusAfterBlock(last_round).do()
 		last_round = status['last-round']
 		trackRounds()
 	}
 
 	onMount(async () => {
+		await getStatus()
 		running = true
 		trackRounds()
 	})
