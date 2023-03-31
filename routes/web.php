@@ -25,3 +25,22 @@ Route::get('/Algo', function () {
         ""
         ]);
 });
+
+
+Route::get('/App', function () {
+    return Inertia::render('App', [
+        ""
+        ]);
+});
+
+Route::get('/Algorand', function () {
+    return Inertia::render('Algorand', [
+        ""
+        ]);
+});
+
+Route::get('/Status', function () {
+    return Inertia::render('Status', [
+        ""
+        ]);
+});
