@@ -1,5 +1,6 @@
-
-
+<script>
+    import Status from './Status.svelte'
+</script>
 
 <div>
 
